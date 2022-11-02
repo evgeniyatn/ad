@@ -27,7 +27,6 @@ def saveData(id):
     now = datetime.datetime.now().strftime("%H.%M.%S")
     clearData()
     
-    #os.mkdir('csv')
 
     vhi_url = (f"https://www.star.nesdis.noaa.gov/smcd/emb/vci/VH/get_TS_admin.php?country=UKR&provinceID={id}&year1=1981&year2=2022&type=Mean")
     res = req.request('GET', vhi_url)
